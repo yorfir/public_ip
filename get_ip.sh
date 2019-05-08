@@ -5,11 +5,11 @@ ip_now=ip_now.txt
 ## init ip.old
 
 while [ ! -f $ip_old ]; do
-curl http://members.3322.org/dyndns/getip  > $ip_old
+curl https://ip.sb  > $ip_old
 done
 ## get ip now
 
-curl http://members.3322.org/dyndns/getip > $ip_now
+curl https://ip.sb > $ip_now
 
 /usr/bin/diff $ip_now $ip_old
 
