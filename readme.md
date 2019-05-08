@@ -1,8 +1,16 @@
 动态获取linux公网ip，然后curl 使用server 酱接口推送新的公网ip。已经更新使用ip.sb来获取ip
+
 如需获取ipv6地址。请替换为ipv4.ip.sb 为 ipv6.ip.sb
+
 获取SCKEY地址http://sc.ftqq.com/?c=code
+
 添加cron来间隔一小时获取ipv4地址
+
 01 * * * * root run-parts /etc/cron.hourly
+
+全自动部署
+
+wget --no-check-certificate https://raw.githubusercontent.com/yorfir/public_ip/master/get_ip_sample.sh && sh besttrace.sh
 
 cron用法
 cron服务的启动关闭
