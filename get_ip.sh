@@ -5,11 +5,11 @@ ip_now=ip_now.txt
 ## init ip.old
 
 while [ ! -f $ip_old ]; do
-curl https://ip.sb  > $ip_old
+curl ipv4.ip.sb  > $ip_old
 done
 ## get ip now
 
-curl https://ip.sb > $ip_now
+curl ipv4.ip.sb > $ip_now
 
 /usr/bin/diff $ip_now $ip_old
 
