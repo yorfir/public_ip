@@ -15,6 +15,5 @@ curl ipv4.ip.sb > $ip_now
 
 if [ $? != 0 ];then
 cat $ip_now > $ip_old
-echo "IP has changed,new ip is$(cat $ip_now) !!!" | curl "https://sc.ftqq.com/SCU3648T93bd7105aedd45e3a9f70497a714dee2581c95d7e4c41
-.send?text=$(cat $ip_now)"
+echo "IP has changed,new ip is$(cat $ip_now) !!!" | curl "https://sc.ftqq.com/SCU3648T93bd7105aedd45e3a9f70497a714dee2581c95d7e4c41.send?text=$(cat $ip_now)"
 fi
