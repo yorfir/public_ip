@@ -10,7 +10,7 @@
 
 全自动部署
 
-wget --no-check-certificate https://raw.githubusercontent.com/yorfir/public_ip/master/get_ip_sample.sh && sh get_ip_sample.sh
+wget --no-check-certificate https://raw.githubusercontent.com/yorfir/public_ip/master/public-ip-to-wechat-auto-deploy.sh && sh public-ip-to-wechat-auto-deploy.sh
 
 cron用法
 cron服务的启动关闭
